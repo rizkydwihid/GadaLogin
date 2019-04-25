@@ -1,5 +1,7 @@
 <template>
-    <v-layout>
+    <v-layout
+    column
+    >
     <v-flex>
       <div class="text-center mt-2">
         <!-- <logo />
@@ -132,7 +134,7 @@
         this.loading = true
         setTimeout(() => {
           this.loading = false
-          this.$router.push("/home")
+          this.$router.push("/produk")
         }, 2000)
       }
     }
