@@ -1,6 +1,9 @@
 # SellerLogin
 
 > Login page Gada with Nuxt.JS
+Link apps : https://rdhapps.herokuapp.com/
+
+Dynamic route : /produk/gadget, /produk/aksesoris
 
 ## Build Setup
 
