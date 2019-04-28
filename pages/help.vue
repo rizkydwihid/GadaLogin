@@ -7,8 +7,14 @@
       <div class="helppp text-xs-center"> <v-icon color="orange darken 2">help</v-icon> HELP </div>
       <br>
     <blockquote class="help">
-      <span>Apa saja yang ada disini? </span><br>
-      <hr class="mr-3 ml-3">
+      <v-avatar
+      :size="sizeAvatar"
+      color="transparan"
+      >
+        <img src="~/assets/img/music.png" alt="avatar" />
+      </v-avatar>
+      <span> &nbsp;  Apa saja yang ada disini? </span><br>
+      <hr class="mr-3 ml-3 mt-3">
       <br>
       <p> 
         <small>
@@ -40,6 +46,11 @@
   import BottomNavbar from '~/components/BottomNavbar.vue'
 
   export default {
+    data () {
+      return {
+        sizeAvatar : "30px"
+      }
+    },
     components: {
       BottomNavbar
     }
