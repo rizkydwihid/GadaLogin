@@ -3,7 +3,12 @@ import pkg from './package'
 
 export default {
   mode: 'universal',
-
+  generate: {
+    routes: [
+      '/produk/gadget',
+      '/produk/aksesoris'
+    ]
+  },
   /*
   ** Headers of the page
   */
