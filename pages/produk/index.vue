@@ -83,7 +83,8 @@ export default {
         { name : 'Iphone X 128GB', pict : 'iphonx.jpg', harga : 'Rp 12.000.000' },
         { name : 'Samsung S8', pict : 'ss-s8.jpg', harga : 'Rp 9.000.000' },
         { name : 'Samsung A7 2018', pict : 'a7.jpg', harga : 'Rp 5.000.000' },
-        { name : 'Xiaomi Mi 8 Lite', pict : 'Mi-8-Lite.png', harga : 'Rp 2.900.000' }
+        { name : 'Xiaomi Mi 8 Lite', pict : 'Mi-8-Lite.png', harga : 'Rp 2.900.000' },
+        { name : 'Iphone 8 64GB', pict : 'iphone8.png', harga : 'Rp 4.500.000'}
       ]
     }
   },
