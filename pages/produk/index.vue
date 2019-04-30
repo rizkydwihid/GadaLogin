@@ -15,9 +15,8 @@
     ></v-text-field>
     <br>
       <p class="no-results" v-if="noResults">Pencarian barang <span><b>" {{ search }} "</b></span> tidak ditemukan.</p>
-    <v-card class="cardproduct" 
+    <v-card class="cardproduct text-xs-center" 
     v-for="produk in filteredList" :key="produk"
-    :search="search"
     >
       <v-img
           :src="require(`assets/img/${produk.pict}`)"
@@ -26,8 +25,8 @@
 
         <v-card-title primary-title class="cardtitle">
           <div>
-            <h5 class="headline mb-0"> {{ produk.name, search }} </h5>
-            <div><small> IDR {{ produk.harga, search }} </small></div>
+            <h5 class="headline mb-0"> {{ produk.name }} </h5>
+            <div><small> IDR {{ produk.harga }} </small></div>
           </div>
         </v-card-title>
     </v-card>
@@ -73,17 +72,13 @@
 
 <script>
 import BottomNavbar from '~/components/BottomNavbar.vue'
+// import { store } from './store'
 
 export default {
   data () {
     return {
       search : '',
       picture : 'iphonx.jpg',
-      headers : [
-        { value : 'name' },
-        { value : 'pict' },
-        { value : 'harga' }
-      ],
       produkList: [
         { name : 'Iphone X 128GB', pict : 'iphonx.jpg', harga : 'Rp 12.000.000' },
         { name : 'Samsung S8', pict : 'ss-s8.jpg', harga : 'Rp 9.000.000' },
@@ -96,6 +91,9 @@ export default {
     BottomNavbar
   },
   computed: {
+    allProduk() {
+      return this.$store.getters.getBarang
+    },
     filteredList() {
       return this.produkList.filter(post => {
         return post.name.toLowerCase().includes(this.search.toLowerCase())

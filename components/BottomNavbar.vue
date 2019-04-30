@@ -10,8 +10,9 @@
         flat
         value="product"
         @click="produk"
+        small
       >
-        <span class="bottnav"><b> Product </b></span>
+        <span class="bottnav"><b> Produk </b></span>
         <v-icon color="orange darken 2">local_mall</v-icon>
       </v-btn>
 
@@ -19,7 +20,19 @@
         color="orange"
         flat
         value="news"
+        @click="kategori"
+        small
+      >
+        <span class="bottnav"><b> Kategori </b></span>
+        <v-icon color="orange darken 2">view_list</v-icon>
+      </v-btn>
+
+      <v-btn
+        color="orange"
+        flat
+        value="news"
         @click="news"
+        small
       >
         <span class="bottnav"><b> News </b></span>
         <v-icon color="orange darken 2">trending_up</v-icon>
@@ -28,20 +41,11 @@
       <v-btn
         color="orange"
         flat
-        value="recent"
-        @click="help"
-      >
-        <span class="bottnav"><b> Help </b></span>
-        <v-icon color="orange darken 2">help</v-icon>
-      </v-btn>
-
-      <v-btn
-        color="orange"
-        flat
         value="exit"
         @click="keluar"
+        small
       >
-        <span class="bottnav"><b> Exit </b></span>
+        <span class="bottnav"><b> Keluar </b></span>
         <v-icon color="orange darken 2">exit_to_app</v-icon>
       </v-btn>
     </v-bottom-nav>
@@ -69,8 +73,8 @@
       produk () {
         this.$router.push("/produk")
       },
-      help () {
-        this.$router.push("/help")
+      kategori () {
+        this.$router.push("/kategori")
       },
       news () {
         this.$router.push("/news")
