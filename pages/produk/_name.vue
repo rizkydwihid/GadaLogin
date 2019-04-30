@@ -45,12 +45,12 @@ import BottomNavbar from '~/components/BottomNavbar.vue'
 export default {
   data () {
     return {
-      name: this.$route.params.name
+      name: this.$route.params.nama
     }
   },
   computed: {
     post() {
-      return this.$store.state.produk.all.find(post => post.name === this.name)
+      return this.$store.state.produk.all.find(post => post.nama === this.name)
     },
     relatedPosts () {
       return this.$store.state.produk.all.filter(post => post.name !== this.name)
