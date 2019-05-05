@@ -25,4 +25,4 @@ export const actions = {
 }
 // test with integromat.com
 // notif
-// notif lagi 2
+// trigger notification
