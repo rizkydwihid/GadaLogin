@@ -23,8 +23,4 @@ export const actions = {
         url += '&apiKey=318272093cec43d480e5dbe696027306'
     }
 }
-// test with integromat.com
-// notif
-// trigger notification
-// coba lagi
-// coba terus
+// ===============
